@@ -1,6 +1,6 @@
 <?php
 require('bca.php');
-define("mutasi_bca",
+define("login",
     [
         'user_id' => 'username_bca',
         'pswd' => 'pass_bca'
@@ -9,8 +9,8 @@ define("mutasi_bca",
 
 $date = 30; // max 30 hari
 $bca = new BCA(
-    mutasi_bca['user_id'],
-    mutasi_bca['pswd'],
+    login['user_id'],
+    login['pswd'],
     $date
 );
 
